@@ -1,8 +1,26 @@
-# nextui
+<p align="center">
+  <a href="https://nextui.dev">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset=".github/assets/logo-dark.svg" />
+      <img src=".github/assets/logo-light.svg" alt="nextui" width="96" height="96" />
+    </picture>
+  </a>
+</p>
 
-Beautiful, copy-paste React components for shadcn/ui and Tailwind CSS v4, ready for you and for your coding agent.
+<h1 align="center">nextui</h1>
 
-**[Browse the library →](https://nextui.dev)**
+<p align="center">Beautiful, copy-paste React components for shadcn/ui and Tailwind CSS v4,<br />ready for you and for your coding agent.</p>
+
+<p align="center"><a href="https://nextui.dev"><b>Browse the library →</b></a></p>
+
+<table>
+<tr><td width="50%" align="center"><a href="https://nextui.dev/blocks/hero-04"><img src=".github/assets/previews/hero-04.gif" alt="Orbit chat hero" width="100%" /></a><br /><sub><b>Orbit chat hero</b> · <code>hero-04</code></sub></td><td width="50%" align="center"><a href="https://nextui.dev/blocks/hero-02"><img src=".github/assets/previews/hero-02.gif" alt="Integrations grid hero" width="100%" /></a><br /><sub><b>Integrations grid hero</b> · <code>hero-02</code></sub></td></tr>
+<tr><td width="50%" align="center"><a href="https://nextui.dev/blocks/pricing-01"><img src=".github/assets/previews/pricing-01.gif" alt="Three-tier pricing" width="100%" /></a><br /><sub><b>Three-tier pricing</b> · <code>pricing-01</code></sub></td><td width="50%" align="center"><a href="https://nextui.dev/blocks/team-01"><img src=".github/assets/previews/team-01.gif" alt="Team carousel" width="100%" /></a><br /><sub><b>Team carousel</b> · <code>team-01</code></sub></td></tr>
+<tr><td width="50%" align="center"><a href="https://nextui.dev/components/card-05"><img src=".github/assets/previews/card-05.gif" alt="Prompt deck" width="100%" /></a><br /><sub><b>Prompt deck</b> · <code>card-05</code></sub></td><td width="50%" align="center"><a href="https://nextui.dev/components/card-06"><img src=".github/assets/previews/card-06.gif" alt="Smart PDF stack" width="100%" /></a><br /><sub><b>Smart PDF stack</b> · <code>card-06</code></sub></td></tr>
+<tr><td width="50%" align="center"><a href="https://nextui.dev/components/waitlist"><img src=".github/assets/previews/waitlist.gif" alt="Waitlist" width="100%" /></a><br /><sub><b>Waitlist</b> · <code>waitlist</code></sub></td><td width="50%" align="center"><a href="https://nextui.dev/components/tabs-01"><img src=".github/assets/previews/tabs-01.gif" alt="Waitlist pass" width="100%" /></a><br /><sub><b>Waitlist pass</b> · <code>tabs-01</code></sub></td></tr>
+<tr><td width="50%" align="center"><a href="https://nextui.dev/components/card-03"><img src=".github/assets/previews/card-03.gif" alt="Folder card" width="100%" /></a><br /><sub><b>Folder card</b> · <code>card-03</code></sub></td><td width="50%" align="center"><a href="https://nextui.dev/components/badge-01"><img src=".github/assets/previews/badge-01.gif" alt="QR scan badge" width="100%" /></a><br /><sub><b>QR scan badge</b> · <code>badge-01</code></sub></td></tr>
+<tr><td width="50%" align="center"><a href="https://nextui.dev/components/card-02"><img src=".github/assets/previews/card-02.gif" alt="Agent thinking" width="100%" /></a><br /><sub><b>Agent thinking</b> · <code>card-02</code></sub></td><td width="50%" align="center"><a href="https://nextui.dev/motion/sound-ring"><img src=".github/assets/previews/sound-ring.gif" alt="Sound ring" width="100%" /></a><br /><sub><b>Sound ring</b> · <code>sound-ring</code></sub></td></tr>
+</table>
 
 - 30 free components, blocks and motion effects, MIT licensed
 - One command to install, no package to depend on: the code lands in your project
