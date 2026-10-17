@@ -1,0 +1,842 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "nextui",
+  "homepage": "https://nextui.dev",
+  "items": [
+    {
+      "name": "card-02",
+      "type": "registry:component",
+      "title": "Agent thinking",
+      "description": "Thinking indicator: a wobbling dot ring and a shimmering label.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/components/card-02.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/card-02.tsx"
+        }
+      ],
+      "categories": [
+        "ai"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "ai",
+        "pro": false,
+        "previewHeight": 460
+      }
+    },
+    {
+      "name": "button-03",
+      "type": "registry:component",
+      "title": "Thinking indicator",
+      "description": "AI thinking status with a monochrome sparkling diamond and shimmering text.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/components/button-03.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/button-03.tsx"
+        }
+      ],
+      "categories": [
+        "ai"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "ai",
+        "pro": false,
+        "previewHeight": 240
+      }
+    },
+    {
+      "name": "card-05",
+      "type": "registry:component",
+      "title": "Prompt deck",
+      "description": "A stack of prompt cards that swipes the front card away and lifts the next one into place, on a loop while it is on screen.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/components/card-05.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/card-05.tsx"
+        }
+      ],
+      "categories": [
+        "ai"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "ai",
+        "pro": false,
+        "previewHeight": 340,
+        "new": true
+      }
+    },
+    {
+      "name": "button-01",
+      "type": "registry:component",
+      "title": "Buttons with icons",
+      "description": "Secondary, outline and destructive buttons with soft status buttons and animated icons, popping in as one group.",
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/components/button-01.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/button-01.tsx"
+        }
+      ],
+      "categories": [
+        "elements"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "elements",
+        "pro": false,
+        "previewHeight": 280
+      }
+    },
+    {
+      "name": "badge-01",
+      "type": "registry:component",
+      "title": "QR scan badge",
+      "description": "A QR code that dissolves into sand, pours into a scan badge and grows back.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "registry/components/badge-01.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/badge-01.tsx"
+        }
+      ],
+      "categories": [
+        "elements"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "elements",
+        "pro": false,
+        "previewHeight": 340
+      }
+    },
+    {
+      "name": "input-01",
+      "type": "registry:component",
+      "title": "Input with label",
+      "description": "Email input with a label and helper text.",
+      "dependencies": [],
+      "registryDependencies": [
+        "input",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/components/input-01.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/input-01.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "forms",
+        "pro": false,
+        "previewHeight": 280
+      }
+    },
+    {
+      "name": "input-02",
+      "type": "registry:component",
+      "title": "Input with icon and button",
+      "description": "Newsletter-style input with a leading icon and submit button.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "input",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/components/input-02.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/input-02.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "forms",
+        "pro": false,
+        "previewHeight": 280
+      }
+    },
+    {
+      "name": "avatar-01",
+      "type": "registry:component",
+      "title": "Avatar group",
+      "description": "Stacked avatars with an overflow count.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "registry/components/avatar-01.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/avatar-01.tsx"
+        }
+      ],
+      "categories": [
+        "elements"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "elements",
+        "pro": false,
+        "previewHeight": 280
+      }
+    },
+    {
+      "name": "switch-01",
+      "type": "registry:component",
+      "title": "Settings switches",
+      "description": "Notification settings list with switches.",
+      "dependencies": [],
+      "registryDependencies": [
+        "switch",
+        "label",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/components/switch-01.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/switch-01.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "forms",
+        "pro": false,
+        "previewHeight": 340
+      }
+    },
+    {
+      "name": "badge-02",
+      "type": "registry:component",
+      "title": "Rolling price badge",
+      "description": "Pill badge that rolls between prices glyph by glyph, resizing smoothly as it goes.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "registry/components/badge-02.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/badge-02.tsx"
+        }
+      ],
+      "categories": [
+        "elements"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "elements",
+        "pro": false,
+        "previewHeight": 240
+      }
+    },
+    {
+      "name": "input-03",
+      "type": "registry:component",
+      "title": "Password with strength meter",
+      "description": "Password input with show/hide toggle and a live strength checklist.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "input",
+        "label",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/components/input-03.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/input-03.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "forms",
+        "pro": false,
+        "previewHeight": 320
+      }
+    },
+    {
+      "name": "input-04",
+      "type": "registry:component",
+      "title": "One-time code input",
+      "description": "Six-digit OTP input with paste, backspace and arrow-key support.",
+      "dependencies": [],
+      "registryDependencies": [
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/components/input-04.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/input-04.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "forms",
+        "pro": false,
+        "previewHeight": 260
+      }
+    },
+    {
+      "name": "waitlist",
+      "type": "registry:component",
+      "title": "Waitlist",
+      "description": "Email signup with a live avatar stack: new people slide in, the last one tucks under a rolling join counter.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "input",
+        "button",
+        "label",
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "registry/components/waitlist.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/waitlist.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "forms",
+        "pro": false,
+        "previewHeight": 280,
+        "new": true
+      }
+    },
+    {
+      "name": "card-03",
+      "type": "registry:component",
+      "title": "Folder card",
+      "description": "Folder that opens on hover and fans out the files inside.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/components/card-03.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/card-03.tsx"
+        }
+      ],
+      "categories": [
+        "cards"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "cards",
+        "pro": false,
+        "previewHeight": 460
+      }
+    },
+    {
+      "name": "card-06",
+      "type": "registry:component",
+      "title": "Smart PDF stack",
+      "description": "A file card with paper sheets and tilted profile cards behind it that rise in on enter and fan out on hover.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/components/card-06.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/card-06.tsx"
+        }
+      ],
+      "categories": [
+        "cards"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "cards",
+        "pro": false,
+        "previewHeight": 340,
+        "new": true
+      }
+    },
+    {
+      "name": "avatar-02",
+      "type": "registry:component",
+      "title": "Avatars with status",
+      "description": "Team list with online, away and offline status dots.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/components/avatar-02.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/avatar-02.tsx"
+        }
+      ],
+      "categories": [
+        "elements"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "elements",
+        "pro": false,
+        "previewHeight": 300
+      }
+    },
+    {
+      "name": "alert-01",
+      "type": "registry:component",
+      "title": "Alert banners",
+      "description": "Info, success, warning and error alerts with dismiss buttons.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/components/alert-01.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/alert-01.tsx"
+        }
+      ],
+      "categories": [
+        "feedback"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "feedback",
+        "pro": false,
+        "previewHeight": 420
+      }
+    },
+    {
+      "name": "tabs-01",
+      "type": "registry:component",
+      "title": "Waitlist pass",
+      "description": "Ticket-style waitlist pass with notched edges, a QR code stub and a tilt-and-glare hover.",
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/components/tabs-01.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/tabs-01.tsx"
+        }
+      ],
+      "categories": [
+        "cards"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "cards",
+        "pro": false,
+        "previewHeight": 260
+      }
+    },
+    {
+      "name": "accordion-01",
+      "type": "registry:component",
+      "title": "FAQ accordion",
+      "description": "Accessible accordion built on details and summary.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/components/accordion-01.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/accordion-01.tsx"
+        }
+      ],
+      "categories": [
+        "feedback"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "feedback",
+        "pro": false,
+        "previewHeight": 320
+      }
+    },
+    {
+      "name": "kbd-01",
+      "type": "registry:component",
+      "title": "Keyboard shortcuts",
+      "description": "Shortcut list with styled key caps.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/components/kbd-01.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/kbd-01.tsx"
+        }
+      ],
+      "categories": [
+        "feedback"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "feedback",
+        "pro": false,
+        "previewHeight": 320
+      }
+    },
+    {
+      "name": "empty-01",
+      "type": "registry:component",
+      "title": "Empty state",
+      "description": "Dashed empty state with a skeleton-card illustration, copy and two actions.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/components/empty-01.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/empty-01.tsx"
+        }
+      ],
+      "categories": [
+        "feedback"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "feedback",
+        "pro": false,
+        "previewHeight": 400
+      }
+    },
+    {
+      "name": "hero-02",
+      "type": "registry:block",
+      "title": "Integrations grid hero",
+      "description": "Centered hero on a square grid where integration icons blink in and out, paused while off screen.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/blocks/hero-02.tsx",
+          "type": "registry:component",
+          "target": "components/blocks/hero-02.tsx"
+        }
+      ],
+      "categories": [
+        "hero"
+      ],
+      "meta": {
+        "kind": "block",
+        "category": "hero",
+        "pro": false,
+        "previewHeight": 680,
+        "new": false
+      }
+    },
+    {
+      "name": "pricing-01",
+      "type": "registry:block",
+      "title": "Three-tier pricing",
+      "description": "Three plans with a monthly/annual toggle, usage chips and a framed recommended tier.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/blocks/pricing-01.tsx",
+          "type": "registry:component",
+          "target": "components/blocks/pricing-01.tsx"
+        }
+      ],
+      "categories": [
+        "features"
+      ],
+      "meta": {
+        "kind": "block",
+        "category": "features",
+        "pro": false,
+        "previewHeight": 780,
+        "new": false
+      }
+    },
+    {
+      "name": "testimonials-01",
+      "type": "registry:block",
+      "title": "Testimonial cards",
+      "description": "Three testimonial cards with ratings and avatars.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "card",
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "registry/blocks/testimonials-01.tsx",
+          "type": "registry:component",
+          "target": "components/blocks/testimonials-01.tsx"
+        }
+      ],
+      "categories": [
+        "social-proof"
+      ],
+      "meta": {
+        "kind": "block",
+        "category": "social-proof",
+        "pro": false,
+        "previewHeight": 560,
+        "new": false
+      }
+    },
+    {
+      "name": "hero-03",
+      "type": "registry:block",
+      "title": "Waitlist hero",
+      "description": "Hero with email capture and avatar social proof.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "registry/blocks/hero-03.tsx",
+          "type": "registry:component",
+          "target": "components/blocks/hero-03.tsx"
+        }
+      ],
+      "categories": [
+        "hero"
+      ],
+      "meta": {
+        "kind": "block",
+        "category": "hero",
+        "pro": false,
+        "previewHeight": 560,
+        "new": true
+      }
+    },
+    {
+      "name": "hero-04",
+      "type": "registry:block",
+      "title": "Orbit chat hero",
+      "description": "AI hero with a polished chatbox whose placeholder types out questions, ringed by app icons orbiting on dashed circles. Paused while off screen.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/blocks/hero-04.tsx",
+          "type": "registry:component",
+          "target": "components/blocks/hero-04.tsx"
+        }
+      ],
+      "categories": [
+        "hero"
+      ],
+      "meta": {
+        "kind": "block",
+        "category": "hero",
+        "pro": false,
+        "previewHeight": 760,
+        "new": true
+      }
+    },
+    {
+      "name": "features-03",
+      "type": "registry:block",
+      "title": "Feature with board",
+      "description": "Text and checklist next to a kanban-style pipeline mockup.",
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/blocks/features-03.tsx",
+          "type": "registry:component",
+          "target": "components/blocks/features-03.tsx"
+        }
+      ],
+      "categories": [
+        "features"
+      ],
+      "meta": {
+        "kind": "block",
+        "category": "features",
+        "pro": false,
+        "previewHeight": 620,
+        "new": false
+      }
+    },
+    {
+      "name": "testimonials-02",
+      "type": "registry:block",
+      "title": "Single quote",
+      "description": "One large testimonial with author.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "registry/blocks/testimonials-02.tsx",
+          "type": "registry:component",
+          "target": "components/blocks/testimonials-02.tsx"
+        }
+      ],
+      "categories": [
+        "social-proof"
+      ],
+      "meta": {
+        "kind": "block",
+        "category": "social-proof",
+        "pro": false,
+        "previewHeight": 460,
+        "new": false
+      }
+    },
+    {
+      "name": "team-01",
+      "type": "registry:block",
+      "title": "Team carousel",
+      "description": "Staggered speaker cards on one warm backdrop with a champagne keynote card, scroll-in and hover motion.",
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/blocks/team-01.tsx",
+          "type": "registry:component",
+          "target": "components/blocks/team-01.tsx"
+        }
+      ],
+      "categories": [
+        "social-proof"
+      ],
+      "meta": {
+        "kind": "block",
+        "category": "social-proof",
+        "pro": false,
+        "previewHeight": 680,
+        "new": false
+      }
+    },
+    {
+      "name": "sound-ring",
+      "type": "registry:component",
+      "title": "Sound ring",
+      "description": "A ring of rounded bars that jumps like an audio visualizer, each beat lifting a cluster of bars into a peak.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/motion/sound-ring.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/sound-ring.tsx"
+        }
+      ],
+      "categories": [
+        "effects"
+      ],
+      "meta": {
+        "kind": "motion",
+        "category": "effects",
+        "pro": false,
+        "previewHeight": 360,
+        "new": true
+      }
+    }
+  ]
+}
