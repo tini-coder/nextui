@@ -33,6 +33,16 @@ npx skills add tini-coder/nextui
 
 Then ask for what you want, for example "add a pricing section with a monthly / yearly toggle". The skill lives in [`skills/nextui/`](skills/nextui/SKILL.md).
 
+## Pro highlights
+
+A few of the 9 Pro items. Their source is not in this repository: [get Pro](https://nextui.dev/pricing) to install them.
+
+<table>
+<tr><td width="50%" valign="top"><a href="https://nextui.dev/blocks/hero-pill"><img src=".github/assets/previews/hero-pill.gif" alt="Pill hero" width="100%" /></a><br /><a href="https://nextui.dev/blocks/hero-pill"><b>Pill hero</b></a> · <code>Pro</code><br /><sub>Centered hero with a crew of bobbing agent avatars and a headline pill that wipes between words and colours. Respects reduced motion.</sub></td><td width="50%" valign="top"><a href="https://nextui.dev/components/celebration-card"><img src=".github/assets/previews/celebration-card.gif" alt="Celebration card" width="100%" /></a><br /><a href="https://nextui.dev/components/celebration-card"><b>Celebration card</b></a> · <code>Pro</code><br /><sub>Task bubbles rain down, pile up on the headline and drain away when you switch range.</sub></td></tr>
+<tr><td width="50%" valign="top"><a href="https://nextui.dev/components/task-checklist"><img src=".github/assets/previews/task-checklist.gif" alt="Task checklist" width="100%" /></a><br /><a href="https://nextui.dev/components/task-checklist"><b>Task checklist</b></a> · <code>Pro</code><br /><sub>Collapsible to-do list for an AI agent: each step fills a progress ring, rolls its percentage and strikes through when done.</sub></td><td width="50%" valign="top"><a href="https://nextui.dev/components/chat-input"><img src=".github/assets/previews/chat-input.gif" alt="Chat input" width="100%" /></a><br /><a href="https://nextui.dev/components/chat-input"><b>Chat input</b></a> · <code>Pro</code><br /><sub>Rounded AI prompt box with attach tools, a round send button and a shimmering "Searching the web" status below.</sub></td></tr>
+<tr><td width="50%" valign="top"><a href="https://nextui.dev/components/marquee-card"><img src=".github/assets/previews/marquee-card.gif" alt="Marquee card" width="100%" /></a><br /><a href="https://nextui.dev/components/marquee-card"><b>Marquee card</b></a> · <code>Pro</code><br /><sub>Feature card with rows of style tags drifting in alternating directions behind faded edges, above a short headline.</sub></td><td width="50%" valign="top"><a href="https://nextui.dev/blocks/usage-card"><img src=".github/assets/previews/usage-card.gif" alt="Usage card" width="100%" /></a><br /><a href="https://nextui.dev/blocks/usage-card"><b>Usage card</b></a> · <code>Pro</code><br /><sub>Animated credit usage card with period tabs, stacked breakdown, daily chart and plan limits.</sub></td></tr>
+</table>
+
 ## What's free
 
 ### Components
