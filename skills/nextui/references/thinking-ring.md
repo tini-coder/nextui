@@ -4,7 +4,7 @@ Thinking indicator: a wobbling dot ring and a shimmering label.
 
 - Kind: component, category: AI & agents
 - Live preview: https://nextui.dev/components/thinking-ring
-- Install: `npx shadcn@latest add https://nextui.dev/r/thinking-ring.json`
+- Install: `npm create nextui add thinking-ring`
 - npm dependencies: motion
 
 ## Usage

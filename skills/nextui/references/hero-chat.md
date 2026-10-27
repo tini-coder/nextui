@@ -4,7 +4,7 @@ AI hero with a polished chatbox whose placeholder types out questions, ringed by
 
 - Kind: block, category: Hero
 - Live preview: https://nextui.dev/blocks/hero-chat
-- Install: `npx shadcn@latest add https://nextui.dev/r/hero-chat.json`
+- Install: `npm create nextui add hero-chat`
 - npm dependencies: lucide-react
 - shadcn dependencies: button
 

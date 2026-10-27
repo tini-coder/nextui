@@ -4,7 +4,7 @@ Info, success, warning and error alerts with dismiss buttons.
 
 - Kind: component, category: Feedback & display
 - Live preview: https://nextui.dev/components/alerts
-- Install: `npx shadcn@latest add https://nextui.dev/r/alerts.json`
+- Install: `npm create nextui add alerts`
 - npm dependencies: lucide-react
 - shadcn dependencies: utils
 

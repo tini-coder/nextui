@@ -4,7 +4,7 @@ Newsletter-style input with a leading icon and submit button.
 
 - Kind: component, category: Forms & inputs
 - Live preview: https://nextui.dev/components/subscribe-input
-- Install: `npx shadcn@latest add https://nextui.dev/r/subscribe-input.json`
+- Install: `npm create nextui add subscribe-input`
 - npm dependencies: lucide-react
 - shadcn dependencies: input, button
 

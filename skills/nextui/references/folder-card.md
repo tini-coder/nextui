@@ -4,7 +4,7 @@ Folder that opens on hover and fans out the files inside.
 
 - Kind: component, category: Cards
 - Live preview: https://nextui.dev/components/folder-card
-- Install: `npx shadcn@latest add https://nextui.dev/r/folder-card.json`
+- Install: `npm create nextui add folder-card`
 
 ## Usage
 

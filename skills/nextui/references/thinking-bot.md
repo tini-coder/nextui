@@ -4,7 +4,7 @@ AI thinking status with a sleek android helmet whose visor bars bounce like a vo
 
 - Kind: component, category: AI & agents
 - Live preview: https://nextui.dev/components/thinking-bot
-- Install: `npx shadcn@latest add https://nextui.dev/r/thinking-bot.json`
+- Install: `npm create nextui add thinking-bot`
 - npm dependencies: motion
 
 ## Usage

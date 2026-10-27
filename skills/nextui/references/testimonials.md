@@ -4,7 +4,7 @@ Three testimonial cards with ratings and avatars.
 
 - Kind: block, category: Testimonials & team
 - Live preview: https://nextui.dev/blocks/testimonials
-- Install: `npx shadcn@latest add https://nextui.dev/r/testimonials.json`
+- Install: `npm create nextui add testimonials`
 - npm dependencies: lucide-react
 - shadcn dependencies: card, avatar
 

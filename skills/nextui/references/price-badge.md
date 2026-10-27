@@ -4,7 +4,7 @@ Pill badge that rolls between prices glyph by glyph, resizing smoothly as it goe
 
 - Kind: component, category: Buttons, badges & avatars
 - Live preview: https://nextui.dev/components/price-badge
-- Install: `npx shadcn@latest add https://nextui.dev/r/price-badge.json`
+- Install: `npm create nextui add price-badge`
 - npm dependencies: motion
 - shadcn dependencies: badge
 

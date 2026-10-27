@@ -4,7 +4,7 @@ Six-digit OTP input with paste, backspace and arrow-key support.
 
 - Kind: component, category: Forms & inputs
 - Live preview: https://nextui.dev/components/otp-input
-- Install: `npx shadcn@latest add https://nextui.dev/r/otp-input.json`
+- Install: `npm create nextui add otp-input`
 - shadcn dependencies: label
 
 ## Usage

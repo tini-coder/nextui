@@ -4,7 +4,7 @@ Shortcut list with styled key caps.
 
 - Kind: component, category: Feedback & display
 - Live preview: https://nextui.dev/components/shortcuts
-- Install: `npx shadcn@latest add https://nextui.dev/r/shortcuts.json`
+- Install: `npm create nextui add shortcuts`
 
 ## Usage
 

@@ -4,7 +4,7 @@ Secondary, outline and destructive buttons with soft status buttons and animated
 
 - Kind: component, category: Buttons, badges & avatars
 - Live preview: https://nextui.dev/components/icon-buttons
-- Install: `npx shadcn@latest add https://nextui.dev/r/icon-buttons.json`
+- Install: `npm create nextui add icon-buttons`
 - npm dependencies: lucide-react, motion
 - shadcn dependencies: button
 

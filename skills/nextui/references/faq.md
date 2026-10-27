@@ -4,7 +4,7 @@ Accessible accordion built on details and summary.
 
 - Kind: component, category: Feedback & display
 - Live preview: https://nextui.dev/components/faq
-- Install: `npx shadcn@latest add https://nextui.dev/r/faq.json`
+- Install: `npm create nextui add faq`
 - npm dependencies: lucide-react
 
 ## Usage
