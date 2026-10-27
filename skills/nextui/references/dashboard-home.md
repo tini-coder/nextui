@@ -4,7 +4,7 @@ Dashboard start page with today's counts, an AI search bar, quick actions and re
 
 - Kind: block, category: Features & pricing
 - Live preview: https://nextui.dev/blocks/dashboard-home
-- Install: `npx shadcn@latest add https://nextui.dev/r/dashboard-home.json`
+- Install: `npm create nextui add dashboard-home`
 - npm dependencies: lucide-react
 
 ## Usage

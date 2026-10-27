@@ -4,7 +4,7 @@ A stack of prompt cards that swipes the front card away and lifts the next one i
 
 - Kind: component, category: AI & agents
 - Live preview: https://nextui.dev/components/prompt-deck
-- Install: `npx shadcn@latest add https://nextui.dev/r/prompt-deck.json`
+- Install: `npm create nextui add prompt-deck`
 - npm dependencies: lucide-react
 - shadcn dependencies: utils
 

@@ -4,7 +4,7 @@ One large testimonial with author.
 
 - Kind: block, category: Testimonials & team
 - Live preview: https://nextui.dev/blocks/quote
-- Install: `npx shadcn@latest add https://nextui.dev/r/quote.json`
+- Install: `npm create nextui add quote`
 - shadcn dependencies: avatar
 
 ## Usage

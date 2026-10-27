@@ -4,7 +4,7 @@ Password input with show/hide toggle and a live strength checklist.
 
 - Kind: component, category: Forms & inputs
 - Live preview: https://nextui.dev/components/password-input
-- Install: `npx shadcn@latest add https://nextui.dev/r/password-input.json`
+- Install: `npm create nextui add password-input`
 - npm dependencies: lucide-react
 - shadcn dependencies: input, label, utils
 

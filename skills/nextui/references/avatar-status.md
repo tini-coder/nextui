@@ -4,7 +4,7 @@ Team list with online, away and offline status dots.
 
 - Kind: component, category: Buttons, badges & avatars
 - Live preview: https://nextui.dev/components/avatar-status
-- Install: `npx shadcn@latest add https://nextui.dev/r/avatar-status.json`
+- Install: `npm create nextui add avatar-status`
 - shadcn dependencies: avatar, utils
 
 ## Usage

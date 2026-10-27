@@ -4,7 +4,7 @@ Dashed empty state with a skeleton-card illustration, copy and two actions.
 
 - Kind: component, category: Feedback & display
 - Live preview: https://nextui.dev/components/empty-state
-- Install: `npx shadcn@latest add https://nextui.dev/r/empty-state.json`
+- Install: `npm create nextui add empty-state`
 - npm dependencies: lucide-react
 - shadcn dependencies: button
 

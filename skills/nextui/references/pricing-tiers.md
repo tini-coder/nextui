@@ -4,7 +4,7 @@ Three plans with a monthly/annual toggle, usage chips and a framed recommended t
 
 - Kind: block, category: Features & pricing
 - Live preview: https://nextui.dev/blocks/pricing-tiers
-- Install: `npx shadcn@latest add https://nextui.dev/r/pricing-tiers.json`
+- Install: `npm create nextui add pricing-tiers`
 - npm dependencies: lucide-react
 - shadcn dependencies: button, utils
 

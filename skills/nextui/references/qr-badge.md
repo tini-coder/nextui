@@ -4,7 +4,7 @@ A QR code that dissolves into sand, pours into a scan badge and grows back.
 
 - Kind: component, category: Buttons, badges & avatars
 - Live preview: https://nextui.dev/components/qr-badge
-- Install: `npx shadcn@latest add https://nextui.dev/r/qr-badge.json`
+- Install: `npm create nextui add qr-badge`
 - npm dependencies: lucide-react
 - shadcn dependencies: badge
 

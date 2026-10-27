@@ -4,7 +4,7 @@ Email signup with a live avatar stack: new people slide in, the last one tucks u
 
 - Kind: component, category: Forms & inputs
 - Live preview: https://nextui.dev/components/waitlist
-- Install: `npx shadcn@latest add https://nextui.dev/r/waitlist.json`
+- Install: `npm create nextui add waitlist`
 - npm dependencies: motion
 - shadcn dependencies: input, button, label, avatar
 

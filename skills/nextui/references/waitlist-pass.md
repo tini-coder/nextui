@@ -4,7 +4,7 @@ Ticket-style waitlist pass with notched edges, a QR code stub and a tilt-and-gla
 
 - Kind: component, category: Cards
 - Live preview: https://nextui.dev/components/waitlist-pass
-- Install: `npx shadcn@latest add https://nextui.dev/r/waitlist-pass.json`
+- Install: `npm create nextui add waitlist-pass`
 - npm dependencies: motion
 
 ## Usage

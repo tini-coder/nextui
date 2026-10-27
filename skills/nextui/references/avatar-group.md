@@ -4,7 +4,7 @@ Stacked avatars with an overflow count.
 
 - Kind: component, category: Buttons, badges & avatars
 - Live preview: https://nextui.dev/components/avatar-group
-- Install: `npx shadcn@latest add https://nextui.dev/r/avatar-group.json`
+- Install: `npm create nextui add avatar-group`
 - shadcn dependencies: avatar
 
 ## Usage

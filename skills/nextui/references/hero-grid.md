@@ -4,7 +4,7 @@ Centered hero on a square grid where integration icons blink in and out, paused 
 
 - Kind: block, category: Hero
 - Live preview: https://nextui.dev/blocks/hero-grid
-- Install: `npx shadcn@latest add https://nextui.dev/r/hero-grid.json`
+- Install: `npm create nextui add hero-grid`
 - npm dependencies: lucide-react
 - shadcn dependencies: button
 

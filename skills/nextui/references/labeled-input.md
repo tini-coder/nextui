@@ -4,7 +4,7 @@ Email input with a label and helper text.
 
 - Kind: component, category: Forms & inputs
 - Live preview: https://nextui.dev/components/labeled-input
-- Install: `npx shadcn@latest add https://nextui.dev/r/labeled-input.json`
+- Install: `npm create nextui add labeled-input`
 - shadcn dependencies: input, label
 
 ## Usage

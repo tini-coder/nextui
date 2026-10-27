@@ -4,7 +4,7 @@ Hero with email capture and avatar social proof.
 
 - Kind: block, category: Hero
 - Live preview: https://nextui.dev/blocks/hero-waitlist
-- Install: `npx shadcn@latest add https://nextui.dev/r/hero-waitlist.json`
+- Install: `npm create nextui add hero-waitlist`
 - npm dependencies: lucide-react
 - shadcn dependencies: button, input, avatar
 

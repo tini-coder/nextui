@@ -4,7 +4,7 @@ A file card with paper sheets and tilted profile cards behind it that rise in on
 
 - Kind: component, category: Cards
 - Live preview: https://nextui.dev/components/pdf-stack
-- Install: `npx shadcn@latest add https://nextui.dev/r/pdf-stack.json`
+- Install: `npm create nextui add pdf-stack`
 - npm dependencies: motion, lucide-react
 - shadcn dependencies: utils
 

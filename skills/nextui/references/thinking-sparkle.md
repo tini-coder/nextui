@@ -4,7 +4,7 @@ AI thinking status with a monochrome sparkling diamond and shimmering text.
 
 - Kind: component, category: AI & agents
 - Live preview: https://nextui.dev/components/thinking-sparkle
-- Install: `npx shadcn@latest add https://nextui.dev/r/thinking-sparkle.json`
+- Install: `npm create nextui add thinking-sparkle`
 - npm dependencies: motion
 
 ## Usage

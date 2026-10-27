@@ -4,7 +4,7 @@ Notification settings list with switches.
 
 - Kind: component, category: Forms & inputs
 - Live preview: https://nextui.dev/components/settings-list
-- Install: `npx shadcn@latest add https://nextui.dev/r/settings-list.json`
+- Install: `npm create nextui add settings-list`
 - shadcn dependencies: switch, label, separator
 
 ## Usage

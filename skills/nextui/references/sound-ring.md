@@ -4,7 +4,7 @@ A ring of rounded bars that jumps like an audio visualizer, each beat lifting a 
 
 - Kind: motion, category: Effects
 - Live preview: https://nextui.dev/motion/sound-ring
-- Install: `npx shadcn@latest add https://nextui.dev/r/sound-ring.json`
+- Install: `npm create nextui add sound-ring`
 
 ## Usage
 

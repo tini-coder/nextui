@@ -4,7 +4,7 @@ Staggered speaker cards on one warm backdrop with a champagne keynote card, scro
 
 - Kind: block, category: Testimonials & team
 - Live preview: https://nextui.dev/blocks/team
-- Install: `npx shadcn@latest add https://nextui.dev/r/team.json`
+- Install: `npm create nextui add team`
 - npm dependencies: motion, lucide-react
 
 ## Usage
