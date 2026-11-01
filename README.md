@@ -46,6 +46,7 @@ Options for setup: `--client claude|cursor|vscode|codex` skips the question and 
 ### Accounts and keys
 
 - A free account gets **3 copies or installs a day**. [Builder](https://nextui.dev/pricing) removes the limit.
+- The 8 [agent primitives](#agent-primitives) are free for every account and never count against the limit.
 - Each machine gets its own access key. See and revoke them at [Account → API keys](https://nextui.dev/account/api-keys).
 
 ## Use it with your coding agent
@@ -67,6 +68,30 @@ Then ask for what you want, for example "add an agent chat that streams its answ
 <tr><td width="50%" valign="top"><a href="https://nextui.dev/components/voice-agent"><img src=".github/assets/previews/voice-agent.gif" alt="Voice agent" width="100%" /></a><br /><a href="https://nextui.dev/components/voice-agent"><b>Voice agent</b></a> · <code>voice-agent</code><sub></sub><br /><sub>Voice assistant card with a cube outline made of particles that shake like sound while the call is live, and a Start talking / End call button.</sub></td><td width="50%" valign="top"><a href="https://nextui.dev/components/voice-orb"><img src=".github/assets/previews/voice-orb.gif" alt="Voice orb" width="100%" /></a><br /><a href="https://nextui.dev/components/voice-orb"><b>Voice orb</b></a> · <code>voice-orb</code><sub></sub><br /><sub>Voice assistant card with a swirling sphere of particles, each with its own speed and size, that surge out from the centre and back while the call is live, and a Start talking / End call button.</sub></td></tr>
 <tr><td width="50%" valign="top"><a href="https://nextui.dev/components/task-checklist"><img src=".github/assets/previews/task-checklist.gif" alt="Task checklist" width="100%" /></a><br /><a href="https://nextui.dev/components/task-checklist"><b>Task checklist</b></a> · <code>task-checklist</code><sub></sub><br /><sub>Collapsible to-do list for an AI agent: each step fills a progress ring, rolls its percentage and strikes through when done.</sub></td><td width="50%" valign="top"><a href="https://nextui.dev/components/thinking-wave"><img src=".github/assets/previews/thinking-wave.gif" alt="Thinking wave" width="100%" /></a><br /><a href="https://nextui.dev/components/thinking-wave"><b>Thinking wave</b></a> · <code>thinking-wave</code><sub></sub><br /><sub>Thinking indicator: a breathing wave orb and a shimmering label.</sub></td></tr>
 </table>
+
+## Agent primitives
+
+The eight pieces every agent UI needs, free and MIT licensed: installs never count against the daily limit, and the source is in [`registry/components/`](registry/components). Each one reads AI SDK message parts directly (`part={part}`), so wiring them to `useChat` is a few lines.
+
+<table>
+<tr><td width="50%" valign="top"><a href="https://nextui.dev/components/tool-call"><img src=".github/assets/previews/tool-call.gif" alt="Tool call" width="100%" /></a><br /><a href="https://nextui.dev/components/tool-call"><b>Tool call</b></a> · <code>tool-call</code><sub> · source in this repo</sub><br /><sub>Collapsible card for one AI agent tool call: the arguments stream in, a status pill shimmers while it runs, then the result slides in. Takes a Vercel AI SDK tool part as is.</sub></td><td width="50%" valign="top"><a href="https://nextui.dev/components/tool-approval"><img src=".github/assets/previews/tool-approval.gif" alt="Tool approval" width="100%" /></a><br /><a href="https://nextui.dev/components/tool-approval"><b>Tool approval</b></a> · <code>tool-approval</code><sub> · source in this repo</sub><br /><sub>Inline card that asks the user before an AI agent runs a tool with side effects: the question, the tool name, its arguments as rows, and Approve / Deny buttons that settle into an approved or denied line.</sub></td></tr>
+<tr><td width="50%" valign="top"><a href="https://nextui.dev/components/reasoning"><img src=".github/assets/previews/reasoning.gif" alt="Reasoning" width="100%" /></a><br /><a href="https://nextui.dev/components/reasoning"><b>Reasoning</b></a> · <code>reasoning</code><sub> · source in this repo</sub><br /><sub>Collapsible block for model reasoning: open with a live timer and shimmering label while the model thinks, then folded into "Thought for Ns". Takes AI SDK reasoning parts.</sub></td><td width="50%" valign="top"><a href="https://nextui.dev/components/sources"><img src=".github/assets/previews/sources.gif" alt="Sources" width="100%" /></a><br /><a href="https://nextui.dev/components/sources"><b>Sources</b></a> · <code>sources</code><sub> · source in this repo</sub><br /><sub>Agent answer with inline citation chips that show the source on hover, and a collapsible list of the sources behind it. Reads [1]-style markers and AI SDK source-url parts.</sub></td></tr>
+<tr><td width="50%" valign="top"><a href="https://nextui.dev/components/streaming-message"><img src=".github/assets/previews/streaming-message.gif" alt="Streaming message" width="100%" /></a><br /><a href="https://nextui.dev/components/streaming-message"><b>Streaming message</b></a> · <code>streaming-message</code><sub> · source in this repo</sub><br /><sub>Assistant message that streams in word by word with a soft fade, light markdown (bold, inline code, lists, fenced code), code blocks that hold their frame while code arrives, a Stop button while streaming and Copy / Regenerate when done.</sub></td><td width="50%" valign="top"><a href="https://nextui.dev/components/conversation-shell"><img src=".github/assets/previews/conversation-shell.gif" alt="Conversation shell" width="100%" /></a><br /><a href="https://nextui.dev/components/conversation-shell"><b>Conversation shell</b></a> · <code>conversation-shell</code><sub> · source in this repo</sub><br /><sub>App frame for an AI agent chat: a top bar with breadcrumb, search and Ask AI over a chat panel, a message list that sticks to the newest message while it streams, a jump-to-latest button once you scroll up, an empty state with suggestions, and a growing composer with Send / Stop.</sub></td></tr>
+<tr><td width="50%" valign="top"><a href="https://nextui.dev/components/agent-timeline"><img src=".github/assets/previews/agent-timeline.gif" alt="Agent timeline" width="100%" /></a><br /><a href="https://nextui.dev/components/agent-timeline"><b>Agent timeline</b></a> · <code>agent-timeline</code><sub> · source in this repo</sub><br /><sub>Vertical log of what an AI agent did, one row per step: an icon for the kind of step (think, search, read, tool, write), the title, a detail line, live running state and a done summary.</sub></td><td width="50%" valign="top"><a href="https://nextui.dev/components/artifact-panel"><img src=".github/assets/previews/artifact-panel.gif" alt="Artifact panel" width="100%" /></a><br /><a href="https://nextui.dev/components/artifact-panel"><b>Artifact panel</b></a> · <code>artifact-panel</code><sub> · source in this repo</sub><br /><sub>Side panel for what an AI agent made: Preview and Code tabs, a version switcher with a note per version, copy, and code that streams in while the agent writes.</sub></td></tr>
+</table>
+
+## Agent starter
+
+A complete agent chat built from these primitives: Next.js, the [AI SDK](https://ai-sdk.dev), tool calls, an approval before sending email, citations from a search tool, reasoning and streaming. It runs without an API key on a scripted demo model, so you can click through every state first.
+
+```bash
+npx degit tini-coder/nextui/starters/agent my-agent
+cd my-agent && npm install && npm run dev
+```
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftini-coder%2Fnextui&root-directory=starters%2Fagent&project-name=agent-starter&repository-name=agent-starter)
+
+Details in [`starters/agent`](starters/agent).
 
 ## Components
 
@@ -126,7 +151,8 @@ Full pages and landing templates. Open one for a live preview.
 
 ## What's in this repo
 
-- [`registry/`](registry): MIT-licensed source of 31 items, marked "source in this repo" above
+- [`registry/`](registry): MIT-licensed source of 39 items, marked "source in this repo" above
+- [`starters/agent/`](starters/agent): the agent starter app
 - [`skills/nextui/`](skills/nextui/SKILL.md): the agent skill, with a reference file for each of those items
 - [`.github/assets/previews/`](.github/assets/previews): the preview GIFs used in this README
 

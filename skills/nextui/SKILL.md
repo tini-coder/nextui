@@ -11,7 +11,7 @@ nextui is a library of agent UI components for React & Tailwind: chat streaming,
 
 1. Pick the item that fits from the tables below and read its reference file.
 2. If the project has no `NEXTUI_TOKEN` in `.env.local` or no `@nextui` entry in `components.json`, ask the user to run `npm create nextui` once: it signs in through the browser, saves the key, adds the registry (running `npx shadcn@latest init` if needed) and can connect MCP. Setup for a new app: https://nextui.dev/docs/new-project.
-3. Install the item with `npm create nextui add <name>` (or `npx shadcn@latest add @nextui/<name>`). Free accounts get 3 copies or installs a day; if the registry answers with a limit error, tell the user (Builder removes the limit: https://nextui.dev/pricing).
+3. Install the item with `npm create nextui add <name>` (or `npx shadcn@latest add @nextui/<name>`). Free accounts get 3 copies or installs a day, except the agent primitives (tool-call, tool-approval, reasoning, sources, streaming-message, conversation-shell, agent-timeline, artifact-panel), which never count; if the registry answers with a limit error, tell the user (Builder removes the limit: https://nextui.dev/pricing).
 4. Import it from `@/components/nextui/<name>` and adapt copy, data and layout to the page. Keep the motion and accessibility details as they are.
 
 ## Items with source in this repo
@@ -20,6 +20,14 @@ nextui is a library of agent UI components for React & Tailwind: chat streaming,
 
 | Name | Title | What it is | Reference |
 | --- | --- | --- | --- |
+| `tool-call` | Tool call | Collapsible card for one AI agent tool call: the arguments stream in, a status pill shimmers while it runs, then the result slides in. Takes a Vercel AI SDK tool part as is. | [references/tool-call.md](references/tool-call.md) |
+| `tool-approval` | Tool approval | Inline card that asks the user before an AI agent runs a tool with side effects: the question, the tool name, its arguments as rows, and Approve / Deny buttons that settle into an approved or denied line. | [references/tool-approval.md](references/tool-approval.md) |
+| `reasoning` | Reasoning | Collapsible block for model reasoning: open with a live timer and shimmering label while the model thinks, then folded into "Thought for Ns". Takes AI SDK reasoning parts. | [references/reasoning.md](references/reasoning.md) |
+| `sources` | Sources | Agent answer with inline citation chips that show the source on hover, and a collapsible list of the sources behind it. Reads [1]-style markers and AI SDK source-url parts. | [references/sources.md](references/sources.md) |
+| `streaming-message` | Streaming message | Assistant message that streams in word by word with a soft fade, light markdown (bold, inline code, lists, fenced code), code blocks that hold their frame while code arrives, a Stop button while streaming and Copy / Regenerate when done. | [references/streaming-message.md](references/streaming-message.md) |
+| `conversation-shell` | Conversation shell | App frame for an AI agent chat: a top bar with breadcrumb, search and Ask AI over a chat panel, a message list that sticks to the newest message while it streams, a jump-to-latest button once you scroll up, an empty state with suggestions, and a growing composer with Send / Stop. | [references/conversation-shell.md](references/conversation-shell.md) |
+| `agent-timeline` | Agent timeline | Vertical log of what an AI agent did, one row per step: an icon for the kind of step (think, search, read, tool, write), the title, a detail line, live running state and a done summary. | [references/agent-timeline.md](references/agent-timeline.md) |
+| `artifact-panel` | Artifact panel | Side panel for what an AI agent made: Preview and Code tabs, a version switcher with a note per version, copy, and code that streams in while the agent writes. | [references/artifact-panel.md](references/artifact-panel.md) |
 | `thinking-ring` | Thinking ring | Thinking indicator: a wobbling dot ring and a shimmering label. | [references/thinking-ring.md](references/thinking-ring.md) |
 | `thinking-sparkle` | Thinking sparkle | AI thinking status with a monochrome sparkling diamond and shimmering text. | [references/thinking-sparkle.md](references/thinking-sparkle.md) |
 | `thinking-bot` | Thinking bot | AI thinking status with a sleek android helmet whose visor bars bounce like a voice meter beside shimmering text. | [references/thinking-bot.md](references/thinking-bot.md) |

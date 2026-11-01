@@ -861,6 +861,238 @@
         "previewHeight": 360,
         "new": true
       }
+    },
+    {
+      "name": "tool-call",
+      "type": "registry:component",
+      "title": "Tool call",
+      "description": "Collapsible card for one AI agent tool call: the arguments stream in, a status pill shimmers while it runs, then the result slides in. Takes a Vercel AI SDK tool part as is.",
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/components/tool-call.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/tool-call.tsx"
+        }
+      ],
+      "categories": [
+        "ai"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "ai",
+        "pro": false,
+        "previewHeight": 420
+      }
+    },
+    {
+      "name": "tool-approval",
+      "type": "registry:component",
+      "title": "Tool approval",
+      "description": "Inline card that asks the user before an AI agent runs a tool with side effects: the question, the tool name, its arguments as rows, and Approve / Deny buttons that settle into an approved or denied line.",
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/components/tool-approval.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/tool-approval.tsx"
+        }
+      ],
+      "categories": [
+        "ai"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "ai",
+        "pro": false,
+        "previewHeight": 380
+      }
+    },
+    {
+      "name": "reasoning",
+      "type": "registry:component",
+      "title": "Reasoning",
+      "description": "Collapsible block for model reasoning: open with a live timer and shimmering label while the model thinks, then folded into \"Thought for Ns\". Takes AI SDK reasoning parts.",
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/components/reasoning.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/reasoning.tsx"
+        }
+      ],
+      "categories": [
+        "ai"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "ai",
+        "pro": false,
+        "previewHeight": 320
+      }
+    },
+    {
+      "name": "sources",
+      "type": "registry:component",
+      "title": "Sources",
+      "description": "Agent answer with inline citation chips that show the source on hover, and a collapsible list of the sources behind it. Reads [1]-style markers and AI SDK source-url parts.",
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/components/sources.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/sources.tsx"
+        }
+      ],
+      "categories": [
+        "ai"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "ai",
+        "pro": false,
+        "previewHeight": 360
+      }
+    },
+    {
+      "name": "streaming-message",
+      "type": "registry:component",
+      "title": "Streaming message",
+      "description": "Assistant message that streams in word by word with a soft fade, light markdown (bold, inline code, lists, fenced code), code blocks that hold their frame while code arrives, a Stop button while streaming and Copy / Regenerate when done.",
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/components/streaming-message.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/streaming-message.tsx"
+        }
+      ],
+      "categories": [
+        "ai"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "ai",
+        "pro": false,
+        "previewHeight": 480
+      }
+    },
+    {
+      "name": "conversation-shell",
+      "type": "registry:component",
+      "title": "Conversation shell",
+      "description": "App frame for an AI agent chat: a top bar with breadcrumb, search and Ask AI over a chat panel, a message list that sticks to the newest message while it streams, a jump-to-latest button once you scroll up, an empty state with suggestions, and a growing composer with Send / Stop.",
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/components/conversation-shell.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/conversation-shell.tsx"
+        }
+      ],
+      "categories": [
+        "ai"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "ai",
+        "pro": false,
+        "previewHeight": 520
+      }
+    },
+    {
+      "name": "agent-timeline",
+      "type": "registry:component",
+      "title": "Agent timeline",
+      "description": "Vertical log of what an AI agent did, one row per step: an icon for the kind of step (think, search, read, tool, write), the title, a detail line, live running state and a done summary.",
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/components/agent-timeline.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/agent-timeline.tsx"
+        }
+      ],
+      "categories": [
+        "ai"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "ai",
+        "pro": false,
+        "previewHeight": 440
+      }
+    },
+    {
+      "name": "artifact-panel",
+      "type": "registry:component",
+      "title": "Artifact panel",
+      "description": "Side panel for what an AI agent made: Preview and Code tabs, a version switcher with a note per version, copy, and code that streams in while the agent writes.",
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [
+        {
+          "path": "registry/components/artifact-panel.tsx",
+          "type": "registry:component",
+          "target": "components/nextui/artifact-panel.tsx"
+        }
+      ],
+      "categories": [
+        "ai"
+      ],
+      "meta": {
+        "kind": "component",
+        "category": "ai",
+        "pro": false,
+        "previewHeight": 460
+      }
     }
   ]
 }
