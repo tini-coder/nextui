@@ -36,7 +36,7 @@ Open http://localhost:3000. With no API key the chat answers with a scripted **d
 
 2. Restart `npm run dev`. The default model is `anthropic/claude-sonnet-5.5`. Set `MODEL` to any gateway model id to switch.
 
-Deployed on Vercel, the gateway authenticates on its own, so you don't need the key there.
+On Vercel, either add `AI_GATEWAY_API_KEY` to the project's environment variables, or set `MODEL` (for example `anthropic/claude-sonnet-5.5`) to use the deployment's own gateway sign-in. Until one of them is set, the deployed app runs on the demo model. AI Gateway needs credits on your Vercel team; if it has none, the chat shows the gateway's error.
 
 ## Make it yours
 

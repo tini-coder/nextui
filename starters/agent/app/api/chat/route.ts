@@ -11,16 +11,17 @@ import { instructions, toolApproval, tools } from "@/lib/agent/tools";
 
 export const maxDuration = 60;
 
-// On Vercel the gateway authenticates with OIDC; locally it needs AI_GATEWAY_API_KEY.
-// Without either, the scripted demo model answers so the UI still works.
-const hasGateway = Boolean(process.env.AI_GATEWAY_API_KEY || process.env.VERCEL_OIDC_TOKEN || process.env.VERCEL);
+// The real model runs once you opt in: set AI_GATEWAY_API_KEY, or set MODEL on Vercel, where the
+// gateway signs in with the deployment's OIDC token. Until then the scripted demo model answers,
+// so a fresh clone or a one-click deploy works with no setup.
+const useGateway = Boolean(process.env.AI_GATEWAY_API_KEY || process.env.MODEL);
 
 export async function POST(req: Request) {
   const { messages }: { messages: UIMessage[] } = await req.json();
 
   const result = streamText({
     // Any Vercel AI Gateway model id. Set MODEL to switch without touching code.
-    model: hasGateway ? process.env.MODEL || "anthropic/claude-sonnet-5.5" : demoModel,
+    model: useGateway ? process.env.MODEL || "anthropic/claude-sonnet-5.5" : demoModel,
     instructions,
     messages: await convertToModelMessages(messages),
     tools,
@@ -31,6 +32,12 @@ export async function POST(req: Request) {
   });
 
   return createUIMessageStreamResponse({
-    stream: toUIMessageStream({ stream: result.stream, sendReasoning: true, originalMessages: messages }),
+    stream: toUIMessageStream({
+      stream: result.stream,
+      sendReasoning: true,
+      originalMessages: messages,
+      // Show the real reason (bad key, no gateway credits, unknown model) instead of "An error occurred".
+      onError: (error) => (error instanceof Error ? error.message : String(error)),
+    }),
   });
 }
