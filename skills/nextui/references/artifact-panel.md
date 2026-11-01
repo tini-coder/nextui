@@ -51,6 +51,7 @@ export function Workspace({ versions, writing }: { versions: ArtifactVersion[]; 
 | `onTabChange` | `(tab) => void` |  | Called when the user switches tabs |
 | `streaming` | `boolean` | `false` | The newest version's code is still arriving; shows a cursor and follows the last line |
 | `autoPlay` | `boolean` | `false` | Play a scripted edit on a loop while on screen, for demos |
+| `fill` | `boolean` | `false` | Fill the parent's height instead of a fixed 256px body, e.g. as a side panel |
 | `className` | `string` |  | Extra classes on the wrapper |
 
 ## When to use
@@ -111,6 +112,8 @@ export type ArtifactPanelProps = {
   streaming?: boolean;
   /** Play a scripted edit on a loop while on screen, for demos. */
   autoPlay?: boolean;
+  /** Fill the parent's height instead of a fixed 256px body, e.g. as a side panel. */
+  fill?: boolean;
   className?: string;
 };
 
@@ -189,6 +192,7 @@ export function ArtifactPanel({
   onTabChange,
   streaming: streamingProp = false,
   autoPlay = false,
+  fill = false,
   className,
 }: ArtifactPanelProps) {
   const ref = useRef<HTMLDivElement>(null);
@@ -272,8 +276,8 @@ export function ArtifactPanel({
   const lines = code.split("\n");
 
   return (
-    <div ref={ref} className={cn("w-full max-w-lg rounded-xl bg-muted p-1.5 text-foreground", className)}>
-      <div className="overflow-hidden rounded-lg border bg-card shadow-xs">
+    <div ref={ref} className={cn("w-full max-w-lg rounded-xl bg-muted p-1.5 text-foreground", fill && "flex h-full max-w-none flex-col", className)}>
+      <div className={cn("overflow-hidden rounded-lg border bg-card shadow-xs", fill && "flex min-h-0 flex-1 flex-col")}>
         <div className="flex items-center gap-2 border-b px-3 py-2">
           <FileCode2 className="size-4 shrink-0 text-muted-foreground" aria-hidden />
           <span className="min-w-0 truncate font-mono text-[13px] font-medium">{title}</span>
@@ -351,7 +355,7 @@ export function ArtifactPanel({
           </div>
         )}
 
-        <div className="relative h-64">
+        <div className={cn("relative", fill ? "min-h-0 flex-1" : "h-64")}>
           <AnimatePresence mode="wait" initial={false}>
             {shownTab === "preview" ? (
               <motion.div
@@ -360,7 +364,11 @@ export function ArtifactPanel({
                 animate={{ opacity: 1, scale: 1 }}
                 exit={reduce ? undefined : { opacity: 0 }}
                 transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
-                className="absolute inset-0 grid place-items-center overflow-auto bg-[radial-gradient(var(--border)_1px,transparent_1px)] [background-size:14px_14px] p-4"
+                className={cn(
+                  "absolute inset-0 overflow-auto bg-[radial-gradient(var(--border)_1px,transparent_1px)] [background-size:14px_14px] p-4",
+                  // A tall preview scrolls from its top; centring it would cut off the top.
+                  fill ? "grid justify-items-center" : "grid place-items-center",
+                )}
               >
                 {current.preview}
               </motion.div>
