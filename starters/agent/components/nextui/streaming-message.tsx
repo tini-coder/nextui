@@ -141,6 +141,8 @@ function Words({ segs, animate }: { segs: Seg[]; animate: boolean }) {
         const parts = s.text.split(/(\s+)/);
         let local = 0;
         const words = parts.map((w) => {
+          // A segment that starts with a space splits into "" then " ": both would get the same key.
+          if (!w) return null;
           const key = s.at + local;
           local += w.length;
           if (!w.trim()) return <Fragment key={key}>{w}</Fragment>;
